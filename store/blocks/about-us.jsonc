@@ -1,0 +1,10 @@
+{
+  "store.custom#about-us": {
+    "children": ["rich-text"]
+  },
+  "rich-text": {
+    "props": {
+      "content": "mi texto"
+    }
+  }
+}

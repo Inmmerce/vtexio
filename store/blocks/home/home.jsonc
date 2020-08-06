@@ -1,0 +1,112 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#fullbanner",
+      "flex-layout.row#deals",
+      "flex-layout.row#shelf",
+      "flex-layout.row#newsletter",
+      "flex-layout.row#inforcar"
+    ]
+  },
+
+  "list-context.image-list#fullbanner": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "images": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf"
+    }
+  },
+
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-summary-add-to-list-button",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-price",
+      "product-identifier.summary",
+      "add-to-cart-button"
+    ]
+  },
+  "product-summary-price": {
+    "props": {
+      "showListPrice": true,
+      "showDiscountValue": true,
+      "showListPriceRange": true
+    }
+  },
+
+  "flex-layout.row#newsletter": {
+    "children": ["newsletter"]
+  },
+  "newsletter": {
+    "props": {
+      "hideLabel": false,
+      "label": "Subscriber for newsletter",
+      "submit": "Enviar ahorita",
+      "placeholder": "cargue tu mejor email"
+    }
+  },
+
+  "flex-layout.row#inforcar": {
+    "children": ["info-card"],
+    "props": { "fullWidth": true }
+  },
+
+  "info-card": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Eso es un infoCard",
+      "callToActionText": "Descubre",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example"
+    }
+  }
+}

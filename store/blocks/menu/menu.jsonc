@@ -1,0 +1,89 @@
+{
+  "vtex.menu@2.x:menu#topleft": {
+    "children": ["menu-item#1", "menu-item#2"]
+  },
+  "vtex.menu@2.x:menu#topright": {
+    "children": ["menu-item#3", "menu-item#4"]
+  },
+  "vtex.menu@2.x:menu#mainheader": {
+    "children": ["menu-item#5", "menu-item#6"]
+  },
+  "menu-item#1": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ayuda",
+        "tagTitle": "(+800) 123 456 7890",
+        "text": "(+800) 123 456 7890"
+      },
+      "iconProps": {
+        "id": "hpa-telefono"
+      }
+    }
+  },
+  "menu-item#2": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ayuda",
+        "tagTitle": "sample@email.com",
+        "text": "sample@email.com"
+      },
+      "iconProps": {
+        "id": "hpa-sobre"
+      }
+    }
+  },
+  "menu-item#3": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ayuda",
+        "tagTitle": "Store Location",
+        "text": "Store Location"
+      },
+      "iconProps": {
+        "id": "hpa-pin"
+      }
+    }
+  },
+  "menu-item#4": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ayuda",
+        "tagTitle": "Track Your Order",
+        "text": "Track Your Order"
+      },
+      "iconProps": {
+        "id": "hpa-truck"
+      }
+    }
+  },
+  "menu-item#5": {
+    "props": {
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 1
+      }
+    }
+  },
+  "menu-item#6": {
+    "props": {
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 2
+      }
+    }
+  }
+}

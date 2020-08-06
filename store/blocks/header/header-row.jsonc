@@ -1,0 +1,85 @@
+{
+  "flex-layout.row#1-desktop": {
+    "children": ["notification.bar"],
+    "props": { "fullWidth": true }
+  },
+  "flex-layout.row#2-desktop": {
+    "children": [
+      "flex-layout.col#topleft",
+      "header-spacer",
+      "flex-layout.col#topright"
+    ],
+    "props": { "fullWidth": true }
+  },
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#menuheader",
+      "flex-layout.col#search-desktop",
+      "flex-layout.col#login",
+      "flex-layout.col#minicart"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "children": ["logo#desktop"]
+  },
+  "flex-layout.col#menuheader": {
+    "children": ["vtex.menu@2.x:menu#mainheader"]
+  },
+  "flex-layout.col#search-desktop": {
+    "children": ["search-bar"]
+  },
+  "flex-layout.col#login": {
+    "children": ["login"]
+  },
+  "flex-layout.col#minicart": {
+    "children": ["minicart.v2"]
+  },
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true
+    }
+  },
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Loguarse",
+      "emailPraceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "width": "180"
+    }
+  },
+
+  "flex-layout.col#topleft": {
+    "children": ["vtex.menu@2.x:menu#topleft"],
+    "props": {
+      "horizontalAlign": "left"
+    }
+  },
+  "flex-layout.col#topright": {
+    "children": ["vtex.menu@2.x:menu#topright"],
+    "props": {
+      "horizontalAlign": "right"
+    }
+  },
+
+  "notification.bar": {
+    "props": {
+      "content": "Queremos que te cuides y que tu familia esté bien #QuedateEnCasa."
+    }
+  }
+}

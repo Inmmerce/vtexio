@@ -1,0 +1,57 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop"]
+  },
+  "footer-layout.desktop": {
+    "children": ["flex-layout.row#footer-desktop"]
+  },
+
+  "flex-layout.row#footer-desktop": {
+    "children": [
+      "flex-layout.col#socialnetworks",
+      "flex-layout.col#richtext",
+      "flex-layout.col#payment"
+    ],
+    "props": { "fullWidth": true }
+  },
+  "flex-layout.col#socialnetworks": {
+    "children": ["social-networks"],
+    "props": {
+      "horizontalAlign": "left"
+    }
+  },
+  "flex-layout.col#richtext": {
+    "children": ["rich-text"]
+  },
+  "flex-layout.col#payment": {
+    "children": ["accepted-payment-methods"],
+    "props": {
+      "horizontalAlign": "right"
+    }
+  },
+
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        { "url": "https://facebook.com/foo", "name": "facebook" },
+        { "url": "https://facebook.com/foo", "name": "twitter" },
+        { "url": "https://facebook.com/foo", "name": "linkedin" },
+        { "url": "https://facebook.com/foo", "name": "youtube" },
+        { "url": "https://facebook.com/foo", "name": "pinterest" }
+      ],
+      "showInColor": true
+    }
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": ["mastercard", "visa", "diners club"],
+      "showInColor": false
+    }
+  },
+
+  "rich-text": {
+    "props": {
+      "content": "eseo es un rich text"
+    }
+  }
+}
