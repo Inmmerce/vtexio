@@ -5,7 +5,8 @@
       "flex-layout.row#deals",
       "flex-layout.row#shelf",
       "flex-layout.row#newsletter",
-      "flex-layout.row#inforcar"
+      "flex-layout.row#inforcar",
+      "flex-layout.row#helloworld"
     ]
   },
 
@@ -108,5 +109,8 @@
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-example"
     }
+  },
+  "flex-layout.row#helloworld": {
+    "children": ["helloworld"]
   }
 }
