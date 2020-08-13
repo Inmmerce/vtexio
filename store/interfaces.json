@@ -1,5 +1,8 @@
 {
   "helloworld": {
     "component": "HelloWorld"
+  },
+  "countdonw": {
+    "component": "CountDonw"
   }
 }

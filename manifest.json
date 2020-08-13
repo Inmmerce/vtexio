@@ -1,6 +1,6 @@
 {
   "vendor": "tiendatest3",
-  "name": "tiendatest3",
+  "name": "sandbox",
   "version": "0.0.5",
   "builders": {
     "styles": "2.x",

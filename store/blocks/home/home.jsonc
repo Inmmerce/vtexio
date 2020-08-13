@@ -111,6 +111,6 @@
     }
   },
   "flex-layout.row#helloworld": {
-    "children": ["helloworld"]
+    "children": ["helloworld", "countdonw"]
   }
 }
