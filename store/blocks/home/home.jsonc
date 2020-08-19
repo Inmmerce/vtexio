@@ -61,18 +61,6 @@
     }
   },
 
-  "product-summary.shelf": {
-    "children": [
-      "product-summary-image",
-      "product-summary-name",
-      "product-summary-add-to-list-button",
-      "product-rating-inline",
-      "product-summary-space",
-      "product-summary-price",
-      "product-identifier.summary",
-      "add-to-cart-button"
-    ]
-  },
   "product-summary-price": {
     "props": {
       "showListPrice": true,

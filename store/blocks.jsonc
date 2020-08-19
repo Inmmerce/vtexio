@@ -20,5 +20,37 @@
       "defaultOption": 1,
       "showPasswordVerificationIntoTooltip": true
     }
+  },
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-summary-price",
+      "product-specification-badges",
+      "product-summary-space",
+      "add-to-cart-button"
+    ]
+  },
+  "add-to-cart-button": {
+    "props": {
+      "isOneClickBuy": false
+    }
+  },
+  "product-specification-badges": {
+    "props": {
+      "specificationGroupName": "allSpecifications",
+      "specificationsOptions": [
+        {
+          "specificationName": "On Sale",
+          "displayValue": "SPECIFICATION_NAME",
+          "visibleWhen": "True"
+        },
+        {
+          "specificationName": "Demo",
+          "displayValue": "SPECIFICATION_NAME",
+          "visibleWhen": "True"
+        }
+      ]
+    }
   }
 }
